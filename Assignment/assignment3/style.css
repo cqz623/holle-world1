@@ -1,0 +1,37 @@
+.picture {
+    position: fixed;
+    top: 10px;
+    left: 100px;
+}
+
+.picture img {
+    width: 200px;
+    height: auto;
+    background-color: red;
+}
+
+h1,
+h3,
+p {
+    margin-left: 400px;
+    width: 600px;
+ }
+
+ .picture2 {
+    position: fixed;
+    top: 270px;
+    left: -260px;
+    font-size: 15px;
+    font-family: Arial, sans-serif; 
+}
+
+.picture4{
+    position: fixed;
+    top: 320px;
+    left: -260px;
+    width: 180px;
+    font-size: 13px;
+    font-family: Arial, sans-serif; 
+}
+
+ 
