@@ -1,0 +1,21 @@
+p{
+    color: green;
+}
+
+
+.wrapper li{
+    color: red;
+}
+
+.wrapper > p {
+    color: orange;
+    font-style: italic;
+}
+
+h1: hover {
+
+}
+
+.wrapper a:link {
+    color: aqua;
+}
