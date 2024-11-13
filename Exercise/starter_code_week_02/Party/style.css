@@ -19,3 +19,7 @@ h1: hover {
 .wrapper a:link {
     color: aqua;
 }
+
+body {
+    background-color: aqua;
+}
