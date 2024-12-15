@@ -1,0 +1,166 @@
+body {
+    font-family: 'Spectral', serif;
+    background-color: #234A40;
+    color: #9BEC90;
+}
+
+.fixed-title {
+    position: fixed;
+    top: 80px; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 同时水平和垂直居中 */
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.fixed-title2 {
+    position: fixed;
+    top: 100px; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 同时水平和垂直居中 */
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.fixed-title3 {
+    position: fixed;
+    top: 150px; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 同时水平和垂直居中 */
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fixed-paragraph {
+    position: fixed;
+    top: 500px; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 同时水平和垂直居中 */
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.fixed-paragraph2 {
+    position: fixed;
+    top: 550px; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 同时水平和垂直居中 */
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.container {
+    position: fixed; /* 固定位置，不随页面滚动 */
+    top: 200px; /* 距离页面顶部 10px（可以调整） */
+    left: 50%; /* 定位到视口的 50% 位置 */
+    transform: translateX(-50%); /* 将元素自身宽度的 50% 向左偏移，实现水平居中 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+}
+
+.picture {
+    width: 200px; /* 控制图片宽度 */
+    height: auto; /* 保持图片宽高比 */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 防止页面滚动 */
+}
+
+.scroll-container {
+  position: relative;
+}
+
+/* 容器设置 */
+.scrolling-text {
+    position: fixed; /* 固定在页面上 */
+    bottom: 0;  /* 从底部开始 */
+    left: 0;
+    width: 20%; /* 容器宽度占满整个屏幕 */
+    height: 100%; /* 容器高度占满整个屏幕 */
+    overflow: hidden; /* 隐藏超出容器部分 */
+}
+
+/* 滚动文本设置 */
+.top-left-paragraph {
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 从底部开始滚动 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 宽度100% */
+    font-family: 'Franklin Gothic Medium', 'Arial Regular', Arial, sans-serif;
+    font-size: 16px; /* 设置字体大小 */
+    line-height: 1.5; /* 调整行间距 */
+    text-align: left; /* 靠左对齐 */
+    white-space: normal; /* 允许换行 */
+    animation: scroll-up 10s linear infinite; /* 设置动画：20秒循环滚动 */
+}
+
+/* 动画：自下而上的滚动 */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* 从底部开始 */
+    }
+    50% {
+        transform: translateY(0); /* 中间时，文本处于容器中央 */
+    }
+    100% {
+        transform: translateY(-100%); /* 完全滚动到顶部 */
+    }
+}
+
+/* 容器设置 */
+.scrolling-text2 {
+    position: fixed; /* 固定在页面上 */
+    bottom: 0;  /* 从底部开始 */
+    right: 0;
+    width: 20%; /* 容器宽度占满整个屏幕 */
+    height: 100%; /* 容器高度占满整个屏幕 */
+    overflow: hidden; /* 隐藏超出容器部分 */
+}
+
+/* 滚动文本设置 */
+.top-left-paragraph2 {
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 从底部开始滚动 */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 宽度100% */
+    font-family: 'Franklin Gothic Medium', 'Arial Regular', Arial, sans-serif;
+    font-size: 16px; /* 设置字体大小 */
+    line-height: 1.5; /* 调整行间距 */
+    text-align: right; /* 靠左对齐 */
+    white-space: normal; /* 允许换行 */
+    animation: scroll-up 10.9s linear infinite; /* 设置动画：20秒循环滚动 */
+}
+
+/* 动画：自下而上的滚动 */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* 从底部开始 */
+    }
+    50% {
+        transform: translateY(0); /* 中间时，文本处于容器中央 */
+    }
+    100% {
+        transform: translateY(-100%); /* 完全滚动到顶部 */
+    }
+}
